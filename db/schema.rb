@@ -17,8 +17,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_25_110252) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "recipient_id", null: false
-    t.index [ "recipient_id" ], name: "index_messages_on_recipient_id"
-    t.index [ "user_id" ], name: "index_messages_on_user_id"
+    t.index ["recipient_id"], name: "index_messages_on_recipient_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
